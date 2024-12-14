@@ -60,7 +60,8 @@ class AppRoutes {
       page: () => CameraPageView(),
       name: camera,
       binding: BindingsBuilder(() {
-        Get.lazyPut(() => CameraPageController());}),
+        Get.lazyPut(() => CameraPageController());
+      }),
     ),
     GetPage(page: () => CartPage(), name: cart),
     GetPage(page: () => SimpleCleaningView(), name: simple_cleaning),

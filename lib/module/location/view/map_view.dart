@@ -9,7 +9,8 @@ import 'package:url_launcher/url_launcher.dart';
 
 class MapView extends GetView<local_map_controller.MapController> {
   final TextEditingController _controller = TextEditingController();
-  final MapController _mapController = MapController(); // flutter_map's MapController
+  final MapController _mapController =
+      MapController(); // flutter_map's MapController
   LatLng? _location;
   final List<Marker> _markers = [];
 
@@ -167,7 +168,8 @@ class MapView extends GetView<local_map_controller.MapController> {
             context: Get.context!,
             builder: (context) => AlertDialog(
               title: const Text('Marker Info'),
-              content: Text('Location: ${latLng.latitude}, ${latLng.longitude}'),
+              content:
+                  Text('Location: ${latLng.latitude}, ${latLng.longitude}'),
               actions: <Widget>[
                 TextButton(
                   child: const Text('Buka di Google Maps'),

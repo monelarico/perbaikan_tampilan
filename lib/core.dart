@@ -32,6 +32,7 @@ export 'package:klinik_shoes_project/module/payment_page/view/payment_page_view.
 export 'package:klinik_shoes_project/module/payment_page/view/splash.dart';
 export 'package:klinik_shoes_project/module/profile_page/controller/edit_profile_controller.dart';
 export 'package:klinik_shoes_project/module/profile_page/controller/Profile_controller.dart';
+export 'package:klinik_shoes_project/module/profile_page/controller/settings_controller.dart';
 export 'package:klinik_shoes_project/module/profile_page/view/edit_profile_view.dart';
 export 'package:klinik_shoes_project/module/profile_page/view/profile_page.dart';
 export 'package:klinik_shoes_project/module/profile_page/view/setting_view.dart';

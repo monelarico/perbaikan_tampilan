@@ -26,7 +26,8 @@ class _SettingsPageState extends State<SettingsPage> {
   Future<void> _logout() async {
     try {
       await FirebaseAuth.instance.signOut();
-      Get.offAll(() => WelcomePage()); // Navigasi ke halaman landing page setelah logout
+      Get.offAll(() =>
+          WelcomePage()); // Navigasi ke halaman landing page setelah logout
     } catch (e) {
       Get.snackbar('Logout Failed', 'Error: $e');
     }
@@ -51,7 +52,8 @@ class _SettingsPageState extends State<SettingsPage> {
             ),
             const Divider(),
             ListTile(
-              leading: const Icon(Icons.notifications_active, color: Colors.blue),
+              leading:
+                  const Icon(Icons.notifications_active, color: Colors.blue),
               title: const Text('Audio Notification'),
               trailing: Switch(
                 value: model.isAudioNotificationEnabled,

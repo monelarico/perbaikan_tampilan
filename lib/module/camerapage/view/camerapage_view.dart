@@ -24,7 +24,8 @@ class CameraPageView extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.save),
             onPressed: () {
-              if (controller.imagePath.isNotEmpty || controller.videoPath.isNotEmpty) {
+              if (controller.imagePath.isNotEmpty ||
+                  controller.videoPath.isNotEmpty) {
                 Get.snackbar(
                   'Success',
                   'Foto dan/atau video berhasil disimpan!',
@@ -110,10 +111,12 @@ class CameraPageView extends StatelessWidget {
                       children: [
                         ElevatedButton.icon(
                           onPressed: controller.toggleVideoPlayPause,
-                          icon: Obx(() => Icon(
-                              controller.isVideoPlaying.value ? Icons.pause : Icons.play_arrow)),
-                          label: Obx(() => Text(
-                              controller.isVideoPlaying.value ? "Pause" : "Play")),
+                          icon: Obx(() => Icon(controller.isVideoPlaying.value
+                              ? Icons.pause
+                              : Icons.play_arrow)),
+                          label: Obx(() => Text(controller.isVideoPlaying.value
+                              ? "Pause"
+                              : "Play")),
                         ),
                       ],
                     ),
