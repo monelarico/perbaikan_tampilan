@@ -1,8 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart' as getX;
-import 'package:klinik_shoes_project/core.dart';  // Update your core imports accordingly
-import 'depedency_injection.dart'; // Import your connection binding
+import 'package:klinik_shoes_project/core.dart';
+import 'depedency_injection.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

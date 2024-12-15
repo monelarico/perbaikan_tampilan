@@ -8,6 +8,7 @@ import 'package:klinik_shoes_project/module/categories_page/view/one_day_order_v
 import 'package:klinik_shoes_project/module/categories_page/view/simple_cleaning_view.dart';
 import 'package:klinik_shoes_project/module/categories_page/view/whitening_treatment_view.dart';
 import 'package:klinik_shoes_project/module/categories_page/view/woman_shoes_view.dart';
+import 'package:klinik_shoes_project/module/categories_page/binding/simple_cleaning_binding.dart';
 import 'package:klinik_shoes_project/module/history_page/view/history_page_view.dart';
 import 'package:klinik_shoes_project/module/login_page/view/login_page_view.dart';
 import 'package:klinik_shoes_project/module/profile_page/view/profile_page.dart';
@@ -64,7 +65,11 @@ class AppRoutes {
       }),
     ),
     GetPage(page: () => CartPage(), name: cart),
-    GetPage(page: () => SimpleCleaningView(), name: simple_cleaning),
+    GetPage(
+    page: () => SimpleCleaningView(),
+    name: simple_cleaning,
+    binding: SimpleCleaningBinding(),  // Menambahkan binding di sini
+  ),
     GetPage(page: () => DeepCleaningView(), name: deep_cleaning),
     GetPage(page: () => ChangeColorView(), name: change_color),
     GetPage(page: () => LeatherCleaningView(), name: leather_cleaning),
